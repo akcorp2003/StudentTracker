@@ -1,0 +1,25 @@
+﻿<Window x:Class="StudentTracker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentTracker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="356.79" Width="384.877">
+    <Grid Margin="0,0,0,129">
+        <Viewbox HorizontalAlignment="Left" Height="234" Margin="50,64,0,-97" VerticalAlignment="Top" Width="280">
+            <Calendar x:Name="Year_Calendar" Height="182" Width="210" SelectedDatesChanged="Calendar_SelectedDatesChanged"/>
+        </Viewbox>
+        <DockPanel HorizontalAlignment="Left" Height="20" LastChildFill="False" VerticalAlignment="Top" Width="367">
+            <Menu x:Name="menu" Height="20" VerticalAlignment="Top" Width="368">
+                <MenuItem Header="File">
+                    <MenuItem Header="Print"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Tools">
+                    <MenuItem Header="Launch Analysis"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <Label x:Name="label" Content="Please select a date:" HorizontalAlignment="Left" Margin="50,25,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
